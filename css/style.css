@@ -128,6 +128,8 @@ section hr{
     float: right;
 }
 
+/* Portfolio */
+
 .portfolio-work{
     max-width: 33%;
     display: inline-block;
@@ -165,6 +167,8 @@ section hr{
     background-color: #242424;
     border: 1px solid #242424;
 }
+
+/* Social */
 
 .social{
     text-align: center;
@@ -217,6 +221,8 @@ section hr{
     background: url("../img/social_btn.png") no-repeat -11.4375em -3.8125em;
 }
 
+/* Footer */
+
 footer{
     padding-bottom: 3.75em;
     font-family: 'Open Sans', sans-serif;
@@ -224,4 +230,69 @@ footer{
     font-weight: 600;
     text-align: center;
     color: #242424;
+}
+
+/* Media Queries */
+@media screen and (max-width: 900px){
+    #about-me{
+        text-align: center;
+    }
+    #about-me h2{
+        line-height: 1.625em;
+        max-width: 50%;
+        float: none;
+        margin: 1.25em auto 0 auto;
+    }
+
+    #portfolio{
+        text-align: center;
+    }
+
+    #portfolio .portfolio-work:last-child{
+        margin-bottom: 0;
+    }
+
+    .portfolio-work{
+        max-width: 50%;
+        margin: 0 0 1.875em 0;
+    }
+}
+
+@media screen and (max-width: 630px){
+    nav{
+        text-align: center;
+    }
+
+    nav .logo{
+        max-width: 10.9375em;
+        margin-top: 1em;
+    }
+
+    .menu{
+        float: none;
+        margin-top: 0.4em;
+        text-align: center;
+    }
+
+    .menu li{
+        font-size: 0.875em;
+    }
+
+    section h1{
+        font-size: 1.875em;
+    }
+
+    #about-me h2{
+        line-height: 1.5em;
+        max-width: 90%;
+        font-size: 0.875em;
+    }
+
+    .portfolio-work{
+        max-width: 100%
+    }
+
+    .portfolio-work h3{
+        font-size: 1em;
+    }
 }
